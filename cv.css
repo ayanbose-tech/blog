@@ -1,0 +1,501 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  width: 100%;
+}
+
+
+.nav-menu {
+  display: none; /* Hide by default */
+}
+
+.nav-menu.active {
+  display: flex; /* Show when active */
+}
+
+.menu-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #333;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  align-self: flex-end;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.nav-menu {
+  position: absolute;
+  top: 5rem;
+  left: 40%;
+  width: 40vw;
+  height: 10vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: auto;
+  background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+  backdrop-filter: blur(10px); /* Blur effect */
+  padding: 10px 20px;
+  border-radius: 8px; /* Optional: Rounded corners */
+  background-color: rgba(51, 51, 51, 0.9); /* Fallback */
+  backdrop-filter: blur(10px); /* Modern browsers */
+  }
+
+
+.nav-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-menu ul li {
+  margin-left: 20px;
+}
+
+.nav-menu ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.content {
+  width: 70vw;
+  height: 25vh;
+  background-color: #1815ba;
+}
+/* Base Styles */
+main {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.first-content,
+.second-content,
+.third-content,
+.fourth-content {
+  width: 90%; /* Default width for all devices */
+  max-width: 1600px; /* Maximum width for larger screens */
+  margin: 1rem auto; /* Center the content */
+  padding: 1rem;
+  background-color: rgb(71, 73, 73);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+.first-content h1,
+.second-content h1,
+.third-content h1,
+.fourth-content h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.first-content ul li,
+.third-content ul li {
+  list-style: none;
+  margin: 0.5rem 0;
+  gap: 110rem;
+}
+
+.second-content p {
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.third-content .text-1 {
+  padding: 1rem;
+}
+
+.third-content .text-2 
+{
+  padding: 1rem;
+}
+
+.third-content .text-3
+{
+  padding: 1rem;
+}
+
+.third-content .text-4
+{
+  padding: 1rem;
+}
+
+.third-content .text-5
+{
+  padding: 1rem;
+}
+
+.third-content .text-6
+{
+  padding: 1rem;
+}
+
+.third-content .text-7
+{
+  padding: 1rem;
+}
+
+.fourth-content h5 {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+/* Responsive Design */
+/* Mobile Devices (up to 600px) */
+@media (max-width: 600px) {
+  .first-content,
+  .second-content,
+  .third-content,
+  .fourth-content {
+    width: 100%; /* Full width on small screens */
+    margin: 0.5rem 0; /* Reduce margin */
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .first-content h1,
+  .second-content h1,
+  .third-content h1,
+  .fourth-content h1 {
+    font-size: 1.5rem; /* Smaller font size for headings */
+  }
+
+  .first-content ul li,
+  .third-content ul li,
+  .second-content p,
+  .fourth-content h5 {
+    font-size: 0.9rem; /* Smaller font size for text */
+  }
+}
+
+/* Tablet Devices (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  .first-content,
+  .second-content,
+  .third-content,
+  .fourth-content {
+    width: 80%; /* Slightly narrower for tablets */
+    margin: 1rem auto; /* Center the content */
+  }
+
+  .first-content h1,
+  .second-content h1,
+  .third-content h1,
+  .fourth-content h1 {
+    font-size: 1.75rem; /* Medium font size for headings */
+  }
+
+  .first-content ul li,
+  .third-content ul li,
+  .second-content p,
+  .fourth-content h5 {
+    font-size: 1rem; /* Medium font size for text */
+  }
+}
+
+/* Desktop Devices (901px and above) */
+@media (min-width: 901px) {
+  .first-content,
+  .second-content,
+  .third-content,
+  .fourth-content {
+    width: 90%; /* Narrower for desktops */
+    margin: 1.5rem auto; /* Center the content */
+  }
+
+  .first-content h1,
+  .second-content h1,
+  .third-content h1,
+  .fourth-content h1 {
+    font-size: 2rem; /* Larger font size for headings */
+  }
+
+  .first-content ul li,
+  .third-content ul li,
+  .second-content p,
+  .fourth-content h5 {
+    font-size: 1.1rem; /* Larger font size for text */
+  }
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
+
+    .navbar {
+      width: 80vw; /* Adjust width for smaller screens */
+      top: 10px; /* Adjust top position */
+    }
+
+    
+
+  h1 {
+      font-size: 24px;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  ul li {
+      padding: 8px;
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 22px;
+  }
+
+  h2 {
+      font-size: 18px;
+  }
+
+  ul li {
+      padding: 6px;
+      font-size: 12px;
+  }
+}
+
+
+.container-one {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+content-one h1, section h2 {
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 600px) {
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    width: 100%;
+    height: 40vh;
+    margin-top: 0.5rem;
+    background-color: rgba(51, 51, 51, 0.9); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Blur effect */
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu ul {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .nav-menu ul li {
+    margin: 10px 0;
+    margin-top: 1.2rem;
+    padding-left: 1.2rem;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p, ul li {
+    font-size: 14px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  .footer-nav-link ul {
+    flex-direction: column;
+  }
+  .footer-nav-link ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .footer-container .social-content a i {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .socialIcons a {
+    padding: 5px;
+    margin: 4px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 900px) {
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  p, ul li {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  
+}
+
+/* Desktop Styles */
+@media (min-width: 901px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  p, ul li {
+    font-size: 18px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+}
+
+
+/* Footer */
+
+footer {
+  background-color: #111;
+}
+.footer-container {
+  width: 100%;
+  padding: 70px 30px 20px;
+}
+.social-content {
+  display: flex;
+  justify-content: center;
+}
+.social-content a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.social-content a i {
+  font-size: 2em;
+  color: black;
+  opacity: 0, 9;
+}
+/* Hover affect on social media icon */
+.social-content a:hover {
+  background-color: #1815ba;
+  transition: 0.5s;
+}
+.social-content a:hover i {
+  color: white;
+  transition: 0.5s;
+}
+.footer-nav-link {
+  margin: 30px 0;
+}
+.footer-nav-link ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footer-nav-link ul li a {
+  color: white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+}
+
+.footer-nav-link ul li a:hover {
+  opacity: 1;
+}
+.footerBottom {
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p {
+  color: white;
+}
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}

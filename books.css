@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  position: relative;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  position: absolute;
+  margin: 3.5rem;
+  width: 40vw;
+  height: 9vh;
+  top: 20px; /* Adjust position from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* Center the items */
+}
+
+.navbar ul li {
+  margin: 0 15px;
+  padding: 1em;
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  width: 5rem;
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Footer */
+
+footer{
+  background-color: #111;
+}
+.footer-container {
+  width: 100%;
+  padding: 70px 30px 20px ;
+}
+.social-content{
+  display: flex;
+  justify-content: center;
+}
+.social-content a{
+  text-decoration: none;
+  padding:  10px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.social-content a i{
+  font-size: 2em;
+  color: black;
+  opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.social-content a:hover{
+  background-color: #1815ba;
+  transition: 0.5s;
+}
+.social-content a:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.footer-nav-link{
+  margin: 30px 0;
+}
+.footer-nav-link ul{
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+.footer-nav-link ul li a{
+  color:white;
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s;
+
+}
+.footer-nav-link ul li a:hover{
+  opacity: 1;
+}
+.footerBottom{
+  background-color: #000;
+  padding: 20px;
+  text-align: center;
+}
+.footerBottom p{
+  color: white;
+}
+.designer{
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+}
+@media (max-width: 700px){
+  .footer-nav-link ul{
+      flex-direction: column;
+  } 
+  .footer-nav-link ul li{
+      width:100%;
+      text-align: center;
+      margin: 10px;
+  }
+
+  .footer-container .social-content a i {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .socialIcons a{
+      padding: 5px;
+      margin: 4px;
+  }
+}
